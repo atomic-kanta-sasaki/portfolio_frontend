@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme: Theme) =>
             height: theme.spacing(3),
         },
         large: {
-            width: theme.spacing(7),
-            height: theme.spacing(7),
+            width: theme.spacing(20),
+            height: theme.spacing(20),
         },
     }),
 );
@@ -26,7 +26,7 @@ export default function ImageAvatars() {
 
     return (
         <div className={classes.root}>
-            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
+            <Avatar alt="" src="/static/images/avatar/avater.jpg" className={classes.large} />
         </div>
     );
 }
