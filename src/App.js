@@ -10,13 +10,15 @@ import SendIcon from '@material-ui/icons/Send';
 import PriorityHighIcon from '@material-ui/icons/PriorityHigh';
 import ProgressBar from './ProgressBar';
 import AppBar from './AppBar';
-import Avatar from './AppBar';
+import Avatar from './Avatar';
 import Card from './Card';
 import Skelton from './Skelton';
 
 const useStyles = makeStyles({
   root: {
-    width: 230,
+    width: '1400px',
+    margin: 'auto',
+    width: '90%',
   },
 });
 
@@ -25,34 +27,11 @@ export default function TypographyMenu() {
 
   return (
     <Paper className={classes.root}>
-      <MenuList>
-        <MenuItem>
-          <ListItemIcon>
-            <SendIcon fontSize="small" />
-          </ListItemIcon>
-          <Typography variant="inherit">A short message</Typography>
-        </MenuItem>
-        <MenuItem>
-          <ListItemIcon>
-            <PriorityHighIcon fontSize="small" />
-          </ListItemIcon>
-          <Typography variant="inherit">A very long text that overflows</Typography>
-        </MenuItem>
-        <MenuItem>
-          <ListItemIcon>
-            <DraftsIcon fontSize="small" />
-          </ListItemIcon>
-          <Typography variant="inherit" noWrap>
-            A very long text that overflows
-          </Typography>
-        </MenuItem>
-      </MenuList>
       <ProgressBar />
       <AppBar />
+      <Avatar />
       <Skelton />
       <Card />
-      <Avatar />
     </Paper>
-
   );
 }
