@@ -16,7 +16,6 @@ const useStyles = makeStyles(theme => ({
         maxWidth: 345,
         flowGrow: 1,
         textAlign: 'center',
-
     },
     media: {
         height: 290,
