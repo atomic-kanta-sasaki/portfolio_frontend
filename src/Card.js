@@ -5,47 +5,190 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+import Dialog from './Dialog';
+import './Card.css';
+import styled from 'styled-components';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
     root: {
         maxWidth: 345,
+        flowGrow: 1,
+        textAlign: 'center',
+
     },
     media: {
-        height: 140,
+        height: 290,
     },
-});
+    paper: {
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+    },
+}));
+
+const DialogStyled = styled.div`
+    margin: 0 auto;
+`;
+
+const CardStyle = styled.div`
+    padding-left: 54px;
+`;
 
 export default function MediaCard() {
     const classes = useStyles();
 
     return (
-        <Card className={classes.root}>
-            <CardActionArea>
-                <CardMedia
-                    className={classes.media}
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    title="Contemplative Reptile"
-                />
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        Lizard
-          </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                        across all continents except Antarctica
-          </Typography>
-                </CardContent>
-            </CardActionArea>
-            <CardActions>
-                <Button size="small" color="primary">
-                    Share
-        </Button>
-                <Button size="small" color="primary">
-                    Learn More
-        </Button>
-            </CardActions>
-        </Card>
+        <CardStyle>
+            <Grid container spacing={3}>
+                <Grid item xs>
+                    <Card className={classes.root}>
+                        <CardActionArea>
+                            <CardMedia
+                                className={classes.media}
+                                image="https://cpoint-lab.co.jp/wp-content/uploads/2019/06/javaicon.png"
+                                title="Java Icon"
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    言語, 技術名: Java
+                                </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    Level: ★★★★
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <DialogStyled>
+                                <Dialog />
+                            </DialogStyled>
+                        </CardActions>
+                    </Card>
+                </Grid>
+                <Grid item xs>
+                    <Card className={classes.root}>
+                        <CardActionArea>
+                            <CardMedia
+                                className={classes.media}
+                                image="https://cpoint-lab.co.jp/wp-content/uploads/2019/06/javaicon.png"
+                                title="Java Icon"
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    言語, 技術名: Java
+                                </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    Level: ★★★★
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <DialogStyled>
+                                <Dialog />
+                            </DialogStyled>
+                        </CardActions>
+                    </Card>
+                </Grid>
+                <Grid item xs>
+                    <Card className={classes.root}>
+                        <CardActionArea>
+                            <CardMedia
+                                className={classes.media}
+                                image="https://cpoint-lab.co.jp/wp-content/uploads/2019/06/javaicon.png"
+                                title="Java Icon"
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    言語, 技術名: Java
+                                </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    Level: ★★★★
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <DialogStyled>
+                                <Dialog />
+                            </DialogStyled>
+                        </CardActions>
+                    </Card>
+                </Grid>
+            </Grid>
+            <Grid container spacing={3}>
+                <Grid item xs>
+                    <Card className={classes.root}>
+                        <CardActionArea>
+                            <CardMedia
+                                className={classes.media}
+                                image="https://cpoint-lab.co.jp/wp-content/uploads/2019/06/javaicon.png"
+                                title="Java Icon"
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    言語, 技術名: Java
+                                    </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    Level: ★★★★
+                                    </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <DialogStyled>
+                                <Dialog />
+                            </DialogStyled>
+                        </CardActions>
+                    </Card>
+                </Grid>
+                <Grid item xs>
+                    <Card className={classes.root}>
+                        <CardActionArea>
+                            <CardMedia
+                                className={classes.media}
+                                image="https://cpoint-lab.co.jp/wp-content/uploads/2019/06/javaicon.png"
+                                title="Java Icon"
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    言語, 技術名: Java
+                                    </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    Level: ★★★★
+                                    </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <DialogStyled>
+                                <Dialog />
+                            </DialogStyled>
+                        </CardActions>
+                    </Card>
+                </Grid>
+                <Grid item xs>
+                    <Card className={classes.root}>
+                        <CardActionArea>
+                            <CardMedia
+                                className={classes.media}
+                                image="https://cpoint-lab.co.jp/wp-content/uploads/2019/06/javaicon.png"
+                                title="Java Icon"
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    言語, 技術名: Java
+                                    </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    Level: ★★★★
+                                    </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <DialogStyled>
+                                <Dialog />
+                            </DialogStyled>
+                        </CardActions>
+                    </Card>
+                </Grid>
+            </Grid>
+        </CardStyle>
     );
 }

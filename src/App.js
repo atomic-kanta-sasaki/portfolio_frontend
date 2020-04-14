@@ -5,7 +5,6 @@ import ProgressBar from './ProgressBar';
 import AppBar from './AppBar';
 import Avatar from './Avatar';
 import Card from './Card';
-import Skelton from './Skelton';
 
 const useStyles = makeStyles({
   root: {
@@ -23,7 +22,6 @@ export default function TypographyMenu() {
       <ProgressBar />
       <AppBar />
       <Avatar />
-      <Skelton />
       <Card />
     </Paper>
   );
