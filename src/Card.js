@@ -10,6 +10,7 @@ import Grid from '@material-ui/core/Grid';
 import Dialog from './Dialog';
 import './Card.css';
 import styled from 'styled-components';
+import Image from 'react-image-resizer';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -18,7 +19,7 @@ const useStyles = makeStyles(theme => ({
         textAlign: 'center',
     },
     media: {
-        height: 290,
+        height: 200,
     },
     paper: {
         padding: theme.spacing(2),
@@ -44,9 +45,33 @@ export default function MediaCard() {
                 <Grid item xs>
                     <Card className={classes.root}>
                         <CardActionArea>
+                            <Image
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+                                height={200}
+                                width={350}
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    言語, 技術名: Java
+                                </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    Level: ★★★★
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <DialogStyled>
+                                <Dialog />
+                            </DialogStyled>
+                        </CardActions>
+                    </Card>
+                </Grid>
+                <Grid item xs>
+                    <Card className={classes.root}>
+                        <CardActionArea>
                             <CardMedia
                                 className={classes.media}
-                                image="https://cpoint-lab.co.jp/wp-content/uploads/2019/06/javaicon.png"
+                                image=""
                                 title="Java Icon"
                             />
                             <CardContent>
@@ -70,31 +95,7 @@ export default function MediaCard() {
                         <CardActionArea>
                             <CardMedia
                                 className={classes.media}
-                                image="https://cpoint-lab.co.jp/wp-content/uploads/2019/06/javaicon.png"
-                                title="Java Icon"
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    言語, 技術名: Java
-                                </Typography>
-                                <Typography variant="body2" color="textSecondary" component="p">
-                                    Level: ★★★★
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <DialogStyled>
-                                <Dialog />
-                            </DialogStyled>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                <Grid item xs>
-                    <Card className={classes.root}>
-                        <CardActionArea>
-                            <CardMedia
-                                className={classes.media}
-                                image="https://cpoint-lab.co.jp/wp-content/uploads/2019/06/javaicon.png"
+                                image=""
                                 title="Java Icon"
                             />
                             <CardContent>
@@ -120,7 +121,7 @@ export default function MediaCard() {
                         <CardActionArea>
                             <CardMedia
                                 className={classes.media}
-                                image="https://cpoint-lab.co.jp/wp-content/uploads/2019/06/javaicon.png"
+                                image=""
                                 title="Java Icon"
                             />
                             <CardContent>
@@ -144,7 +145,7 @@ export default function MediaCard() {
                         <CardActionArea>
                             <CardMedia
                                 className={classes.media}
-                                image="https://cpoint-lab.co.jp/wp-content/uploads/2019/06/javaicon.png"
+                                image=""
                                 title="Java Icon"
                             />
                             <CardContent>
@@ -168,7 +169,7 @@ export default function MediaCard() {
                         <CardActionArea>
                             <CardMedia
                                 className={classes.media}
-                                image="https://cpoint-lab.co.jp/wp-content/uploads/2019/06/javaicon.png"
+                                image=""
                                 title="Java Icon"
                             />
                             <CardContent>
