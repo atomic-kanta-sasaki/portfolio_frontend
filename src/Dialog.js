@@ -36,8 +36,8 @@ export default function AlertDialog() {
                 <DialogTitle id="alert-dialog-title">{"Use Google's location service?"}</DialogTitle>
                 <DialogContent>
                     <DialogContentText id="alert-dialog-description">
-                        props渡してやる今はできないので放置
-          </DialogContentText>
+
+                    </DialogContentText>
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={handleClose} color="primary">
