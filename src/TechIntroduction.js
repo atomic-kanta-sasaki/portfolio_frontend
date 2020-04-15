@@ -46,7 +46,7 @@ export default function MediaCard() {
                     <Card className={classes.root}>
                         <CardActionArea>
                             <Image
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+                                src="https://cdn-ssl-devio-img.classmethod.jp/wp-content/uploads/2015/12/java_logo-320x320.png"
                                 height={200}
                                 width={350}
                             />
@@ -69,14 +69,14 @@ export default function MediaCard() {
                 <Grid item xs>
                     <Card className={classes.root}>
                         <CardActionArea>
-                            <CardMedia
-                                className={classes.media}
-                                image=""
-                                title="Java Icon"
+                            <Image
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+                                height={200}
+                                width={350}
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    言語, 技術名: Java
+                                    言語, 技術名: React
                                 </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     Level: ★★★★
@@ -93,14 +93,14 @@ export default function MediaCard() {
                 <Grid item xs>
                     <Card className={classes.root}>
                         <CardActionArea>
-                            <CardMedia
-                                className={classes.media}
-                                image=""
-                                title="Java Icon"
+                            <Image
+                                src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg"
+                                height={200}
+                                width={350}
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    言語, 技術名: Java
+                                    言語, 技術名: JavaScript
                                 </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     Level: ★★★★
@@ -119,14 +119,14 @@ export default function MediaCard() {
                 <Grid item xs>
                     <Card className={classes.root}>
                         <CardActionArea>
-                            <CardMedia
-                                className={classes.media}
-                                image=""
-                                title="Java Icon"
+                            <Image
+                                src="https://cdn.icon-icons.com/icons2/112/PNG/512/python_18894.png"
+                                height={200}
+                                width={350}
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    言語, 技術名: Java
+                                    言語, 技術名: Python
                                     </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     Level: ★★★★
@@ -143,14 +143,14 @@ export default function MediaCard() {
                 <Grid item xs>
                     <Card className={classes.root}>
                         <CardActionArea>
-                            <CardMedia
-                                className={classes.media}
-                                image=""
-                                title="Java Icon"
+                            <Image
+                                src="https://f0.pngfuel.com/png/747/798/blue-and-white-happy-new-year-text-mysql-png-clip-art-thumbnail.png"
+                                height={200}
+                                width={350}
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    言語, 技術名: Java
+                                    言語, 技術名: MySQL
                                     </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     Level: ★★★★
@@ -167,14 +167,14 @@ export default function MediaCard() {
                 <Grid item xs>
                     <Card className={classes.root}>
                         <CardActionArea>
-                            <CardMedia
-                                className={classes.media}
-                                image=""
-                                title="Java Icon"
+                            <Image
+                                src="https://www.dcom-web.co.jp/wp-content/uploads/2015/01/img_play_1.png"
+                                height={200}
+                                width={350}
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    言語, 技術名: Java
+                                    言語, 技術名: Play
                                     </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     Level: ★★★★

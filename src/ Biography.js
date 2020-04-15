@@ -27,7 +27,7 @@ export default function SimpleCard() {
     return (
         <Card className={classes.root}>
             <CardContent>
-                {"高校：調布北"}<br />
+                {"高校：調布北高等学校"}<br />
                 {"大学：東京都市大学"}<br />
                 {"大学院：東京都市大学大学院"}<br />
                 {"研究室：ヒューマンメディア研究室"}<br />
