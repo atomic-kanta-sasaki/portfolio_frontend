@@ -2,10 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import Avatar from './Avatar';
-import Biograpyh from './ Biography';
-import SelfIntroduction from './ SelfIntroduction';
-import styled from 'styled-components';
 
 const useStyles = makeStyles({
     root: {
@@ -24,10 +20,6 @@ const useStyles = makeStyles({
     },
 });
 
-const IntroducutionStyle = styled.div`
-    display: flex;
-`;
-
 export default function SimpleCard() {
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
@@ -35,11 +27,7 @@ export default function SimpleCard() {
     return (
         <Card className={classes.root}>
             <CardContent>
-                <IntroducutionStyle>
-                    <Avatar />
-                    <Biograpyh />
-                    <SelfIntroduction />
-                </IntroducutionStyle>
+                {"佐々木寛太です.このサイトはJavaとReactで実装しています."}
             </CardContent>
         </Card>
     );
