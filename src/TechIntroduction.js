@@ -51,7 +51,7 @@ export default function MediaCard() {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    言語, 技術名: Java
+                                    Java
                                 </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     Level: ★★★★
@@ -75,7 +75,7 @@ export default function MediaCard() {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    言語, 技術名: React
+                                    React
                                 </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     Level: ★★★★
@@ -99,7 +99,7 @@ export default function MediaCard() {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    言語, 技術名: JavaScript
+                                    JavaScript
                                 </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     Level: ★★★★
@@ -125,11 +125,11 @@ export default function MediaCard() {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    言語, 技術名: Python
-                                    </Typography>
+                                    Python
+                                </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     Level: ★★★★
-                                    </Typography>
+                                </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
@@ -149,11 +149,11 @@ export default function MediaCard() {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    言語, 技術名: MySQL
-                                    </Typography>
+                                    MySQL
+                                </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     Level: ★★★★
-                                    </Typography>
+                                </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
@@ -173,11 +173,11 @@ export default function MediaCard() {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    言語, 技術名: Play
-                                    </Typography>
+                                    Play
+                                </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     Level: ★★★★
-                                    </Typography>
+                                </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
