@@ -28,6 +28,21 @@ export default function SimpleCard() {
         <Card className={classes.root}>
             <CardContent>
                 {"佐々木寛太です.このサイトはJavaとReactで実装しています."}
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
             </CardContent>
         </Card>
     );

@@ -33,6 +33,15 @@ export default function SimpleCard() {
                 {"研究室：ヒューマンメディア研究室"}<br />
                 {"職歴：株式会社POL"}<br />
                 {"その他：enPiT2 3期生"}<br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
             </CardContent>
         </Card>
     );

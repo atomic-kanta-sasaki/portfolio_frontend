@@ -28,6 +28,12 @@ const IntroducutionStyle = styled.div`
     display: flex;
 `;
 
+const CardSize = styled.div`
+    width: 486px;
+    height: 336px;
+    margin-right: 6px;
+`;
+
 export default function SimpleCard() {
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
@@ -37,8 +43,12 @@ export default function SimpleCard() {
             <CardContent>
                 <IntroducutionStyle>
                     <Avatar />
-                    <Biograpyh />
-                    <SelfIntroduction />
+                    <CardSize>
+                        <Biograpyh />
+                    </CardSize>
+                    <CardSize>
+                        <SelfIntroduction />
+                    </CardSize>
                 </IntroducutionStyle>
             </CardContent>
         </Card>
