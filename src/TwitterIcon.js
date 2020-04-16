@@ -10,7 +10,7 @@ const IconDistance = styled.div`
 export default function SimpleCard() {
     return (
         <IconDistance>
-            <SocialIcon url="https://twitter.com/kanta_sasaki_" />
+            <SocialIcon rel="noreferrer noopener" target="_blank" url="https://twitter.com/kanta_sasaki_" />
         </IconDistance>
     );
 }

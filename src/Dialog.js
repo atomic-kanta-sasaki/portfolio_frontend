@@ -36,7 +36,7 @@ export default function AlertDialog() {
                 <DialogTitle id="alert-dialog-title">{"Use Google's location service?"}</DialogTitle>
                 <DialogContent>
                     <DialogContentText id="alert-dialog-description">
-
+                        {"どんな感じに言語使ってたのか書くところ"}
                     </DialogContentText>
                 </DialogContent>
                 <DialogActions>

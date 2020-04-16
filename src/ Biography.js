@@ -27,10 +27,9 @@ export default function SimpleCard() {
     return (
         <Card className={classes.root}>
             <CardContent>
-                <h3>経歴</h3>
+                <h3>Education and Work history</h3>
                 {"高校：調布北高等学校"}<br />
                 {"大学：東京都市大学"}<br />
-                {"大学院：東京都市大学大学院"}<br />
                 {"研究室：ヒューマンメディア研究室"}<br />
                 {"職歴：株式会社POL"}<br />
                 {"その他：enPiT2 3期生"}<br />

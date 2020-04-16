@@ -9,7 +9,7 @@ export default function SimpleCard() {
 
     return (
         <IconDistance>
-            <SocialIcon url="https://www.instagram.com/kanta.sasaki.0111/?hl=ja" />
+            <SocialIcon rel="noreferrer noopener" target="_blank" url="https://www.instagram.com/kanta.sasaki.0111/?hl=ja" />
         </IconDistance>
     );
 }
