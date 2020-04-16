@@ -33,7 +33,7 @@ export default function ButtonAppBar() {
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>
                         Kanta Sasaki Portfolio
-          </Typography>
+                    </Typography>
                     <Button color="inherit">Login</Button>
                 </Toolbar>
             </AppBar>
