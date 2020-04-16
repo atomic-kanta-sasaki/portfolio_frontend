@@ -6,6 +6,7 @@ import AppBar from './AppBar';
 import styled from 'styled-components';
 import Card from './TechIntroduction';
 import Introduction from './ Introduction';
+import SocialIcons from './SocialIcon';
 
 const useStyles = makeStyles({
   root: {
@@ -31,6 +32,7 @@ export default function TypographyMenu() {
         <Introduction />
       </IntroductionSpace>
       <Card />
+      <SocialIcons />
     </Paper>
   );
 }

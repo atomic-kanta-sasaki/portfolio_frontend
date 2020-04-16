@@ -27,8 +27,8 @@ export default function SimpleCard() {
     return (
         <Card className={classes.root}>
             <CardContent>
+                <h3>自己紹介</h3>
                 {"佐々木寛太です.このサイトはJavaとReactで実装しています."}
-                <br />
                 <br />
                 <br />
                 <br />
