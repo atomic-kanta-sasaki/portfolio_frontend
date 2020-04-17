@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -32,7 +32,7 @@ const DialogStyled = styled.div`
 `;
 
 const CardStyle = styled.div`
-    padding-left: 54px;
+    padding-left: 10%;
 `;
 
 export default function MediaCard() {
