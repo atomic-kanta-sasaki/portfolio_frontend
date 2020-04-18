@@ -32,7 +32,6 @@ class App extends Component {
                 <IntroductionSpace>
                     <Introduction />
                 </IntroductionSpace>
-                <Card />
                 <Connect />
             </Paper>
         )
