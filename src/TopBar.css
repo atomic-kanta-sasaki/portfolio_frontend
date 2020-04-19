@@ -1,0 +1,19 @@
+.link{
+    color: inherit;
+    text-decoration: none;
+}
+
+.link:hover {
+  color: aliceblue;
+}
+
+.now-link{
+    color: #ffffff;
+    font-weight: 500
+}
+
+.slice{
+    color: #ffffff;
+    margin-left:12px;
+    margin-right: 12px
+}

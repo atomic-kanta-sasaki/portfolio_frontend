@@ -1,13 +1,7 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Avatar from './Avatar';
-import Biograpyh from './ Biography';
-import SelfIntroduction from './ SelfIntroduction';
-import styled from 'styled-components'
-import Image from 'react-image-resizer';
-import './SelfIntroduction.css'
+import styled from 'styled-components';
+import './SelfIntroduction.css';
+import TopBar from './TopBar';
 
 const Container = styled.div`
     background-color: #191919;
@@ -18,13 +12,14 @@ const ImagePlace = styled.div`
 
 const SelfIntroductionSpace = styled.div`
     text-align: center;
-    color: #808080;
+    color: #C0C0C0;
 `;
 
 export default function SimpleCard() {
 
     return (
         <Container>
+            <TopBar />
             <ImagePlace>
                 <img
                     id="icon-image"
