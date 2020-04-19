@@ -4,7 +4,8 @@ import styled from 'styled-components';
 
 
 const IconDistance = styled.div`
-    margin-right: 10px;
+    margin-bottom: 16px;
+    margin-left: 2px;
 `;
 
 export default function SimpleCard() {

@@ -7,12 +7,12 @@ import GithubIcon from './GithubIcon';
 import styled from 'styled-components';
 import InstagramIcon from './InstagramIcon';
 import FacebookIcon from './FacebookIcon';
+import TopBar from './TopBar';
 
 const useStyles = makeStyles({
     root: {
-        width: '800px',
-        marginLeft: '20%',
-        // backgroundColor: '#808080',
+        width: '350px',
+        backgroundColor: '#333333',
     },
     bullet: {
         display: 'inline-block',
@@ -34,8 +34,31 @@ const IconPlace = styled.div`
 const Container = styled.div`
     width: 100vw;
     height: 100vh;
-    background-color: #808080;
-    padding-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+`;
+const NameSpace = styled.div`
+    display: flex;
+    align-items: center;
+`;
+
+const IconName = styled.div`
+    color: #FFFFFF;
+    margin-right: 10px;
+    font-size: 20px;
+    margin-bottom: 12px;
+`;
+
+const TitleSpace = styled.div`
+    font-style: oblique;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 24px;
+    color: #FFFFFF
 `;
 
 export default function SimpleCard() {
@@ -43,17 +66,37 @@ export default function SimpleCard() {
     const bull = <span className={classes.bullet}>•</span>;
 
     return (
-        <Container>
-            <Card className={classes.root}>
-                <CardActions>
-                    <IconPlace>
-                        <TwitterIcon />
-                        <InstagramIcon />
-                        <FacebookIcon />
-                        <GithubIcon />
-                    </IconPlace>
-                </CardActions>
-            </Card>
-        </Container>
+        <div>
+            <TopBar />
+            <Container>
+                <Card className={classes.root}>
+                    <TitleSpace>SNS Accounts</TitleSpace>
+                    <CardActions>
+                        <IconPlace>
+                            <NameSpace>
+                                <IconName>Twitter</IconName>
+                                <TwitterIcon />
+                            </NameSpace>
+                            <NameSpace>
+                                <IconName>Instagram</IconName>
+                                <InstagramIcon />
+                            </NameSpace>
+                            <NameSpace>
+                                <IconName>FaceBook</IconName>
+                                <FacebookIcon />
+                            </NameSpace>
+                            <NameSpace>
+                                <IconName>GitHub</IconName>
+                                <GithubIcon />
+                            </NameSpace>
+                        </IconPlace>
+                    </CardActions>
+                    <TitleSpace>Email</TitleSpace>
+                    <IconName>Gmail→ kanta.sasaki.0111@gmail.com</IconName>
+                    <IconName>Univ.Mail→ g1723035@tcu.ac.jp</IconName>
+                </Card>
+            </Container>
+        </div>
+
     );
 }

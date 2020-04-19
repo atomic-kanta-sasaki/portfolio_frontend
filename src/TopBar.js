@@ -35,8 +35,8 @@ class TopBar extends Component {
         return (
             <Container>
                 <LinkPosition>
-                    <div className="now-link">
-                        About
+                    <div className="link">
+                        <a className="link" href="/About">About</a>
                     </div>
                     <div className="slice">/</div>
                     <div>
@@ -44,7 +44,7 @@ class TopBar extends Component {
                     </div>
                     <div className="slice">/</div>
                     <div>
-                        <a className="link" href="/">entry</a>
+                        <a className="link" href="/contact">contact</a>
                     </div>
 
                 </LinkPosition>

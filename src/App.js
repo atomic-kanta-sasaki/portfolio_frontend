@@ -13,7 +13,7 @@ class App extends Component {
           <div>
             <Route path='/' component={EntryPage} exact={true} />
             <Route path='/About' component={Introduction} />
-            <Route path='/Connect' component={Connect} />
+            <Route path='/contact' component={Connect} />
             <Route path='/TechProfile' component={TechProfile} />
           </div>
         </Router>
