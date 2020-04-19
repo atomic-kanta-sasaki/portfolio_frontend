@@ -6,15 +6,13 @@ import TwitterIcon from './TwitterIcon';
 import GithubIcon from './GithubIcon';
 import styled from 'styled-components';
 import InstagramIcon from './InstagramIcon';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import FacebookIcon from './FacebookIcon';
 
 const useStyles = makeStyles({
     root: {
         width: '800px',
         marginLeft: '20%',
-        marginTop: '2%',
+        // backgroundColor: '#808080',
     },
     bullet: {
         display: 'inline-block',
@@ -31,7 +29,13 @@ const useStyles = makeStyles({
 
 const IconPlace = styled.div`
     margin: 0 auto;
-    display: flex;
+`;
+
+const Container = styled.div`
+    width: 100vw;
+    height: 100vh;
+    background-color: #808080;
+    padding-top: 20%;
 `;
 
 export default function SimpleCard() {
@@ -39,15 +43,17 @@ export default function SimpleCard() {
     const bull = <span className={classes.bullet}>•</span>;
 
     return (
-        <Card className={classes.root}>
-            <CardActions>
-                <IconPlace>
-                    <h2>SNS →</h2>
-                    <TwitterIcon />
-                    <InstagramIcon />
-                    <GithubIcon />
-                </IconPlace>
-            </CardActions>
-        </Card>
+        <Container>
+            <Card className={classes.root}>
+                <CardActions>
+                    <IconPlace>
+                        <TwitterIcon />
+                        <InstagramIcon />
+                        <FacebookIcon />
+                        <GithubIcon />
+                    </IconPlace>
+                </CardActions>
+            </Card>
+        </Container>
     );
 }

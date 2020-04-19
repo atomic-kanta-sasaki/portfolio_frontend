@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Introduction from './ Introduction';
 import EntryPage from './EntryPage';
 import TechProfile from './TechProfile';
+import Connect from './Connect'
 
 class App extends Component {
   render() {
@@ -12,7 +13,8 @@ class App extends Component {
           <div>
             <Route path='/' component={EntryPage} exact={true} />
             <Route path='/About' component={Introduction} />
-            <Route path='/TechProfile' component={TechProfile}></Route>
+            <Route path='/Connect' component={Connect} />
+            <Route path='/TechProfile' component={TechProfile} />
           </div>
         </Router>
       </div>
