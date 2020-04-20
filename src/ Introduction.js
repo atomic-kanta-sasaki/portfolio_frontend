@@ -15,11 +15,23 @@ const SelfIntroductionSpace = styled.div`
     color: #C0C0C0;
 `;
 
+const Greeting = styled.div`
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: #FFFFFF;
+    font-size: 70px;
+`;
+
 export default function SimpleCard() {
 
     return (
         <Container>
             <TopBar />
+            <Greeting>
+                Hi, I'm Kanta Sasaki!
+            </Greeting>
             <ImagePlace>
                 <img
                     id="icon-image"
@@ -28,10 +40,6 @@ export default function SimpleCard() {
                     width={400}
                 />
             </ImagePlace>
-            <SelfIntroductionSpace>
-                <h1>Belonging</h1>
-                {"東京都市大学 Human Media Lab."}
-            </SelfIntroductionSpace>
             <SelfIntroductionSpace>
                 <h1>Profile</h1>
                 {"1999生, 学生, Webエンジニア"}<br />
@@ -53,6 +61,10 @@ export default function SimpleCard() {
                 {"研究室ではHCI, ユビキタスコンピューティングに関連した研究を実施中"}<br />
                 <br />
 
+            </SelfIntroductionSpace>
+            <SelfIntroductionSpace>
+                <h1>Belonging</h1>
+                {"東京都市大学 Human Media Lab."}
             </SelfIntroductionSpace>
             <SelfIntroductionSpace>
                 <h1>Career</h1>
