@@ -10,12 +10,23 @@ const Container = styled.div`
     background-color: #191919;
 `;
 
+const Greeting = styled.div`
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: #FFFFFF;
+    font-size: 60px;
+`;
+
 class TechProfile extends Component {
     render() {
         return (
             <Container>
                 <TopBar />
+                <Greeting>Past Works</Greeting>
                 <PastWork />
+                <Greeting>Usage Tech</Greeting>
                 <TechIntroduction />
             </Container>
         )

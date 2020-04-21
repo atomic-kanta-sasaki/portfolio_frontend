@@ -13,9 +13,12 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
+        backgroundColor: '#C0C0C0',
+
     },
     media: {
         height: 140,
+
     },
 });
 
@@ -41,13 +44,14 @@ const Wapper = styled.div`
     }
 `;
 
-const Greeting = styled.div`
-    margin-top: 16px;
-    margin-bottom: 16px;
-    text-align: center;
-    font-family: 'Caveat', cursive;
-    color: #FFFFFF;
-    font-size: 60px;
+const DialogStyled = styled.div`
+    margin: 0 auto;
+`;
+
+const FontColor = styled.div`
+`;
+
+const FontContentsColor = styled.div`
 `;
 
 export default function MediaCard() {
@@ -58,7 +62,6 @@ export default function MediaCard() {
     return (
 
         <Container>
-            <Greeting>Past Works & Usage Tech</Greeting>
             <Wapper>
                 <div className={classe.root}>
                     <Grid container spacing={2}>
@@ -72,15 +75,19 @@ export default function MediaCard() {
                                     />
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="h2">
-                                            LabBase
-                                    </Typography>
+                                            <FontColor>LabBase</FontColor>
+                                        </Typography>
                                         <Typography variant="body2" color="textSecondary" component="p">
-                                            2019.01 ~ 2019.12LabBaseの新機能開発, 不具合修正, アーキテクチャの刷新を行なっていました
-                                    </Typography>
+                                            <FontContentsColor>
+                                                2019.01 ~ 2019.12LabBaseの新機能開発, 不具合修正, アーキテクチャの刷新を行なっていました
+                                            </FontContentsColor>
+                                        </Typography>
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
-                                    <Dialog />
+                                    <DialogStyled>
+                                        <Dialog />
+                                    </DialogStyled>
                                 </CardActions>
                             </Card>
                         </Grid>
@@ -95,14 +102,16 @@ export default function MediaCard() {
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="h2">
                                             LabBase X
-                            </Typography>
+                                        </Typography>
                                         <Typography variant="body2" color="textSecondary" component="p">
                                             2019.01 ~ 2019.12 シーズ情報, 研究者情報の初期のスクレイピングを担当していました.
-                            </Typography>
+                                        </Typography>
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
-                                    <Dialog />
+                                    <DialogStyled>
+                                        <Dialog />
+                                    </DialogStyled>
                                 </CardActions>
                             </Card>
                         </Grid>
@@ -121,14 +130,16 @@ export default function MediaCard() {
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="h2">
                                             PARS (enPit2 BizSysD分野)
-                        </Typography>
+                                        </Typography>
                                         <Typography variant="body2" color="textSecondary" component="p">
                                             PARSという, 位置情報を使用した予定管理アンドロイドアプリ
-                        </Typography>
+                                        </Typography>
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
-                                    <Dialog />
+                                    <DialogStyled>
+                                        <Dialog />
+                                    </DialogStyled>
                                 </CardActions>
                             </Card>
                         </Grid>
@@ -143,14 +154,16 @@ export default function MediaCard() {
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="h2">
                                             Reversi
-                            </Typography>
+                                        </Typography>
                                         <Typography variant="body2" color="textSecondary" component="p">
                                             Min-MaxとAlphaBeta法を利用したオセロアプリケーション
-                            </Typography>
+                                        </Typography>
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
-                                    <Dialog />
+                                    <DialogStyled>
+                                        <Dialog />
+                                    </DialogStyled>
                                 </CardActions>
                             </Card>
                         </Grid>
@@ -158,6 +171,5 @@ export default function MediaCard() {
                 </div>
             </Wapper>
         </Container>
-
     );
 }
