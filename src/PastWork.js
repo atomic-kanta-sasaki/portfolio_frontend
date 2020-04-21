@@ -56,10 +56,10 @@ export default function MediaCard() {
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         LabBase
-                        </Typography>
+                                    </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p">
                                         2019.01 ~ 2019.12LabBaseの新機能開発, 不具合修正, アーキテクチャの刷新を行なっていました
-                        </Typography>
+                                    </Typography>
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
