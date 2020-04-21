@@ -21,7 +21,7 @@ const Greeting = styled.div`
     text-align: center;
     font-family: 'Caveat', cursive;
     color: #FFFFFF;
-    font-size: 70px;
+    font-size: 60px;
 `;
 
 export default function SimpleCard() {
