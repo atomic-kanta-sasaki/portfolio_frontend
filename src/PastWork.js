@@ -8,7 +8,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Dialog from './Dialog';
 import styled from 'styled-components';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
@@ -90,7 +89,7 @@ export default function MediaCard() {
                                 <CardActionArea>
                                     <CardMedia
                                         className={classes.media}
-                                        image="https://assets.st-note.com/production/uploads/images/12299385/rectangle_large_type_2_154e5ea223a9dd1687fcd2f9864ee45a.png?fit=bounds&quality=45&width=1280"
+                                        image="https://lovetech-media.com/wp-content/uploads/2019/03/labbasex_main.png"
                                         title="LabBaseX"
                                     />
                                     <CardContent>
@@ -98,8 +97,7 @@ export default function MediaCard() {
                                             LabBase X
                             </Typography>
                                         <Typography variant="body2" color="textSecondary" component="p">
-                                            2019.01 ~ 2019.12 LabBaseXで使用しているシーズ情報, 研究者情報の初期のスクレイピングを<br />
-                                            担当していました.
+                                            2019.01 ~ 2019.12 シーズ情報, 研究者情報の初期のスクレイピングを担当していました.
                             </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -117,15 +115,15 @@ export default function MediaCard() {
                                 <CardActionArea>
                                     <CardMedia
                                         className={classes.media}
-                                        image="https://material.labbase.jp/product/main_ogp.png"
-                                        title="LabBase"
+                                        image="https://lh3.googleusercontent.com/proxy/ao-QeVGhBnnoLfzL2YnCJMphikxavH74BK5MBd3d-MKjAMC5JxtWAoBZqtZ8Pv_oOMhxNbPOQ1EgUh9BsrJJa-Hjcg"
+                                        title="enPit"
                                     />
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="h2">
                                             PARS (enPit2 BizSysD分野)
                         </Typography>
                                         <Typography variant="body2" color="textSecondary" component="p">
-                                            位置情報を使用した予定管理アプリ(Android)
+                                            PARSという, 位置情報を使用した予定管理アンドロイドアプリ
                         </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -139,7 +137,7 @@ export default function MediaCard() {
                                 <CardActionArea>
                                     <CardMedia
                                         className={classes.media}
-                                        image="https://assets.st-note.com/production/uploads/images/12299385/rectangle_large_type_2_154e5ea223a9dd1687fcd2f9864ee45a.png?fit=bounds&quality=45&width=1280"
+                                        image="/static/images/avatar/Reversi.png"
                                         title="LabBaseX"
                                     />
                                     <CardContent>
