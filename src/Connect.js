@@ -36,7 +36,6 @@ const Container = styled.div`
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #191919;
 `;
 const NameSpace = styled.div`
@@ -60,6 +59,13 @@ const TitleSpace = styled.div`
     font-size: 24px;
     color: #FFFFFF
 `;
+const Greeting = styled.div`
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: #FFFFFF;
+    background-color: #191919;
+    font-size: 60px;
+`;
 
 export default function SimpleCard() {
     const classes = useStyles();
@@ -68,6 +74,7 @@ export default function SimpleCard() {
     return (
         <div>
             <TopBar />
+            <Greeting>Contact</Greeting>
             <Container>
                 <Card className={classes.root}>
                     <TitleSpace>SNS Accounts</TitleSpace>

@@ -33,7 +33,23 @@ const useStyle = makeStyles((theme) => ({
 
 
 const Container = styled.div`
+`;
+
+const Wapper = styled.div`
     padding-left: 15%;
+
+    @media (max-width: 656px) {
+      padding-left: 10%;
+    }
+`;
+
+const Greeting = styled.div`
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: #FFFFFF;
+    font-size: 60px;
 `;
 
 export default function MediaCard() {
@@ -42,104 +58,108 @@ export default function MediaCard() {
 
 
     return (
+
         <Container>
-            <div className={classe.root}>
-                <Grid container spacing={2}>
-                    <Grid item xs={12} sm={6}>
-                        <Card className={classes.root}>
-                            <CardActionArea>
-                                <CardMedia
-                                    className={classes.media}
-                                    image="https://material.labbase.jp/product/main_ogp.png"
-                                    title="LabBase"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        LabBase
+            <Greeting>Past Works & Usage Tech</Greeting>
+            <Wapper>
+                <div className={classe.root}>
+                    <Grid container spacing={2}>
+                        <Grid item xs={12} sm={6}>
+                            <Card className={classes.root}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        className={classes.media}
+                                        image="https://material.labbase.jp/product/main_ogp.png"
+                                        title="LabBase"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="h2">
+                                            LabBase
                                     </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        2019.01 ~ 2019.12LabBaseの新機能開発, 不具合修正, アーキテクチャの刷新を行なっていました
+                                        <Typography variant="body2" color="textSecondary" component="p">
+                                            2019.01 ~ 2019.12LabBaseの新機能開発, 不具合修正, アーキテクチャの刷新を行なっていました
                                     </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                            <CardActions>
-                                <Dialog />
-                            </CardActions>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={12} sm={6}>
-                        <Card className={classes.root}>
-                            <CardActionArea>
-                                <CardMedia
-                                    className={classes.media}
-                                    image="https://assets.st-note.com/production/uploads/images/12299385/rectangle_large_type_2_154e5ea223a9dd1687fcd2f9864ee45a.png?fit=bounds&quality=45&width=1280"
-                                    title="LabBaseX"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        LabBase X
+                                    </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                    <Dialog />
+                                </CardActions>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <Card className={classes.root}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        className={classes.media}
+                                        image="https://assets.st-note.com/production/uploads/images/12299385/rectangle_large_type_2_154e5ea223a9dd1687fcd2f9864ee45a.png?fit=bounds&quality=45&width=1280"
+                                        title="LabBaseX"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="h2">
+                                            LabBase X
                             </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        2019.01 ~ 2019.12 LabBaseXで使用しているシーズ情報, 研究者情報の初期のスクレイピングを<br />
-                                        担当していました.
+                                        <Typography variant="body2" color="textSecondary" component="p">
+                                            2019.01 ~ 2019.12 LabBaseXで使用しているシーズ情報, 研究者情報の初期のスクレイピングを<br />
+                                            担当していました.
                             </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                            <CardActions>
-                                <Dialog />
-                            </CardActions>
-                        </Card>
+                                    </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                    <Dialog />
+                                </CardActions>
+                            </Card>
+                        </Grid>
                     </Grid>
-                </Grid>
-            </div>
-            <div className={classe.root}>
-                <Grid container spacing={2}>
-                    <Grid item xs={12} sm={6}>
-                        <Card className={classes.root}>
-                            <CardActionArea>
-                                <CardMedia
-                                    className={classes.media}
-                                    image="https://material.labbase.jp/product/main_ogp.png"
-                                    title="LabBase"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        PARS (enPit2 BizSysD分野)
+                </div>
+                <div className={classe.root}>
+                    <Grid container spacing={2}>
+                        <Grid item xs={12} sm={6}>
+                            <Card className={classes.root}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        className={classes.media}
+                                        image="https://material.labbase.jp/product/main_ogp.png"
+                                        title="LabBase"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="h2">
+                                            PARS (enPit2 BizSysD分野)
                         </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        位置情報を使用した予定管理アプリ(Android)
+                                        <Typography variant="body2" color="textSecondary" component="p">
+                                            位置情報を使用した予定管理アプリ(Android)
                         </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                            <CardActions>
-                                <Dialog />
-                            </CardActions>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={12} sm={6}>
-                        <Card className={classes.root}>
-                            <CardActionArea>
-                                <CardMedia
-                                    className={classes.media}
-                                    image="https://assets.st-note.com/production/uploads/images/12299385/rectangle_large_type_2_154e5ea223a9dd1687fcd2f9864ee45a.png?fit=bounds&quality=45&width=1280"
-                                    title="LabBaseX"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        Reversi
+                                    </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                    <Dialog />
+                                </CardActions>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <Card className={classes.root}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        className={classes.media}
+                                        image="https://assets.st-note.com/production/uploads/images/12299385/rectangle_large_type_2_154e5ea223a9dd1687fcd2f9864ee45a.png?fit=bounds&quality=45&width=1280"
+                                        title="LabBaseX"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="h2">
+                                            Reversi
                             </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        Min-MaxとAlphaBeta法を利用したオセロアプリケーション
+                                        <Typography variant="body2" color="textSecondary" component="p">
+                                            Min-MaxとAlphaBeta法を利用したオセロアプリケーション
                             </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                            <CardActions>
-                                <Dialog />
-                            </CardActions>
-                        </Card>
+                                    </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                    <Dialog />
+                                </CardActions>
+                            </Card>
+                        </Grid>
                     </Grid>
-                </Grid>
-            </div>
+                </div>
+            </Wapper>
         </Container>
 
     );

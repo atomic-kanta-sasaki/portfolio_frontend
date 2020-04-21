@@ -18,19 +18,6 @@ const LinkPosition = styled.div`
 `;
 
 class TopBar extends Component {
-
-    toMainPage() {
-        this.props.history.push('/About')
-    }
-
-    toWorkPage() {
-        this.props.history.push('/Work')
-    }
-
-    toContactPage() {
-        this.props.history.push('/contact')
-    }
-
     render() {
         return (
             <Container>
