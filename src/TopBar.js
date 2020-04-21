@@ -40,7 +40,7 @@ class TopBar extends Component {
                     </div>
                     <div className="slice">/</div>
                     <div>
-                        <a className="link" href="/TechProfile">Work</a>
+                        <a className="link" href="/work">Work</a>
                     </div>
                     <div className="slice">/</div>
                     <div>
