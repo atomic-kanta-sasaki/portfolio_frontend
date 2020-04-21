@@ -37,7 +37,6 @@ const Container = styled.div`
 
 const Wapper = styled.div`
     padding-left: 15%;
-
     @media (max-width: 656px) {
       padding-left: 10%;
     }
