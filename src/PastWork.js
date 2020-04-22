@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Dialog from './Dialog';
 import styled from 'styled-components';
 import Grid from '@material-ui/core/Grid';
+import LabBase from './DialogContent/LabBase';
 
 const useStyles = makeStyles({
     root: {
@@ -49,15 +50,16 @@ const DialogStyled = styled.div`
 `;
 
 const FontColor = styled.div`
+    text-align: center;
 `;
 
 const FontContentsColor = styled.div`
 `;
 
+
 export default function MediaCard() {
     const classes = useStyles();
     const classe = useStyle();
-
 
     return (
 
@@ -67,7 +69,7 @@ export default function MediaCard() {
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={6}>
                             <Card className={classes.root}>
-                                <CardActionArea>
+                                <CardActionArea onClick>
                                     <CardMedia
                                         className={classes.media}
                                         image="https://material.labbase.jp/product/main_ogp.png"
@@ -86,7 +88,7 @@ export default function MediaCard() {
                                 </CardActionArea>
                                 <CardActions>
                                     <DialogStyled>
-                                        <Dialog />
+                                        <LabBase />
                                     </DialogStyled>
                                 </CardActions>
                             </Card>
