@@ -38,13 +38,12 @@ export default function AlertDialog() {
                 aria-describedby="alert-dialog-description"
             >
                 <DialogTitle id="alert-dialog-title">
-                    <Title>LabBase</Title>
+                    <Title>Reversi</Title>
                 </DialogTitle>
                 <DialogContent>
                     <DialogContentText id="alert-dialog-description">
-                        Java, React, MySQL, Docker, PlayFrameworkを利用.<br />
-                        主にサーバーサイドの新機能開発, 不具合修正, アーキテクチャ刷新作業を行っていた.<br />
-                        フロントエンドは不具合の修正や小規模のUIリプレイスを担当.
+                        JavaFXを利用.<br />
+                        Min-Max法とAlpha-Beta法に基づいたオセロCPUを搭載したGUIアプリケーションを一人で作成.
                     </DialogContentText>
                 </DialogContent>
                 <DialogActions>

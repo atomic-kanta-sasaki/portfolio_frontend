@@ -38,13 +38,15 @@ export default function AlertDialog() {
                 aria-describedby="alert-dialog-description"
             >
                 <DialogTitle id="alert-dialog-title">
-                    <Title>LabBase</Title>
+                    <Title>PARS(enPiT)</Title>
                 </DialogTitle>
                 <DialogContent>
                     <DialogContentText id="alert-dialog-description">
-                        Java, React, MySQL, Docker, PlayFrameworkを利用.<br />
-                        主にサーバーサイドの新機能開発, 不具合修正, アーキテクチャ刷新作業を行っていた.<br />
-                        フロントエンドは不具合の修正や小規模のUIリプレイスを担当.
+                        Kotlin, SQLiteを使用.<br />
+                        Kotlinを使用した位置情報を利用した予定管理アプリを作成.<br />
+                        このアプリの特徴としては, 時間で予定通知を出すのではなく, 登録した場所に近づいたら通知を出すというもの.<br />
+                        またPMとして未経験者でも開発できるような環境のサポートや技術的サポートを実施.
+
                     </DialogContentText>
                 </DialogContent>
                 <DialogActions>

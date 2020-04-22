@@ -38,13 +38,13 @@ export default function AlertDialog() {
                 aria-describedby="alert-dialog-description"
             >
                 <DialogTitle id="alert-dialog-title">
-                    <Title>LabBase</Title>
+                    <Title>LabBaseX</Title>
                 </DialogTitle>
                 <DialogContent>
                     <DialogContentText id="alert-dialog-description">
-                        Java, React, MySQL, Docker, PlayFrameworkを利用.<br />
-                        主にサーバーサイドの新機能開発, 不具合修正, アーキテクチャ刷新作業を行っていた.<br />
-                        フロントエンドは不具合の修正や小規模のUIリプレイスを担当.
+                        Pythonを利用<br />
+                        LabBaseXで使用した, 初期のシーズデータと研究者情報のスクレイピングを実施.
+
                     </DialogContentText>
                 </DialogContent>
                 <DialogActions>

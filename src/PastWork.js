@@ -10,6 +10,9 @@ import Dialog from './Dialog';
 import styled from 'styled-components';
 import Grid from '@material-ui/core/Grid';
 import LabBase from './DialogContent/LabBase';
+import LabBaseX from './DialogContent/LabBaseX';
+import EnPiT from './DialogContent/enPit';
+import Reversi from './DialogContent/Reversi';
 
 const useStyles = makeStyles({
     root: {
@@ -112,7 +115,7 @@ export default function MediaCard() {
                                 </CardActionArea>
                                 <CardActions>
                                     <DialogStyled>
-                                        <Dialog />
+                                        <LabBaseX />
                                     </DialogStyled>
                                 </CardActions>
                             </Card>
@@ -140,7 +143,7 @@ export default function MediaCard() {
                                 </CardActionArea>
                                 <CardActions>
                                     <DialogStyled>
-                                        <Dialog />
+                                        <EnPiT />
                                     </DialogStyled>
                                 </CardActions>
                             </Card>
@@ -164,7 +167,7 @@ export default function MediaCard() {
                                 </CardActionArea>
                                 <CardActions>
                                     <DialogStyled>
-                                        <Dialog />
+                                        <Reversi />
                                     </DialogStyled>
                                 </CardActions>
                             </Card>
