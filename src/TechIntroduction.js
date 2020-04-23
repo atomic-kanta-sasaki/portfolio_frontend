@@ -15,10 +15,10 @@ import Docker from './TechContents/Docker';
 import Java from './TechContents/Java';
 import JS from './TechContents/JS';
 import Kotlin from './TechContents/Kotlin';
-import MySQL from './TechContents/MySQL';
 import Play from './TechContents/Play';
 import Python from './TechContents/Python';
 import Reacts from './TechContents/React'
+import MySQL from './TechContents/MySQL';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -69,7 +69,7 @@ export default function MediaCard() {
                         </CardActionArea>
                         <CardActions>
                             <DialogStyled>
-                                <Dialog />
+                                <Java />
                             </DialogStyled>
                         </CardActions>
                     </Card>
@@ -93,7 +93,7 @@ export default function MediaCard() {
                         </CardActionArea>
                         <CardActions>
                             <DialogStyled>
-                                <Dialog />
+                                <Reacts />
                             </DialogStyled>
                         </CardActions>
                     </Card>
@@ -117,7 +117,7 @@ export default function MediaCard() {
                         </CardActionArea>
                         <CardActions>
                             <DialogStyled>
-                                <Dialog />
+                                <JS />
                             </DialogStyled>
                         </CardActions>
                     </Card>
@@ -143,7 +143,7 @@ export default function MediaCard() {
                         </CardActionArea>
                         <CardActions>
                             <DialogStyled>
-                                <Dialog />
+                                <Python />
                             </DialogStyled>
                         </CardActions>
                     </Card>
@@ -167,7 +167,7 @@ export default function MediaCard() {
                         </CardActionArea>
                         <CardActions>
                             <DialogStyled>
-                                <Dialog />
+                                <MySQL />
                             </DialogStyled>
                         </CardActions>
                     </Card>
@@ -191,7 +191,7 @@ export default function MediaCard() {
                         </CardActionArea>
                         <CardActions>
                             <DialogStyled>
-                                <Dialog />
+                                <Play />
                             </DialogStyled>
                         </CardActions>
                     </Card>
@@ -217,7 +217,7 @@ export default function MediaCard() {
                         </CardActionArea>
                         <CardActions>
                             <DialogStyled>
-                                <Dialog />
+                                <Kotlin />
                             </DialogStyled>
                         </CardActions>
                     </Card>
@@ -241,7 +241,7 @@ export default function MediaCard() {
                         </CardActionArea>
                         <CardActions>
                             <DialogStyled>
-                                <Dialog />
+                                <Docker />
                             </DialogStyled>
                         </CardActions>
                     </Card>
@@ -265,7 +265,7 @@ export default function MediaCard() {
                         </CardActionArea>
                         <CardActions>
                             <DialogStyled>
-                                <Dialog />
+                                <Arduino />
                             </DialogStyled>
                         </CardActions>
                     </Card>
