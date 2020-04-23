@@ -10,6 +10,15 @@ import Dialog from './Dialog';
 import './Card.css';
 import styled from 'styled-components';
 import Image from 'react-image-resizer';
+import Arduino from './TechContents/Arduino';
+import Docker from './TechContents/Docker';
+import Java from './TechContents/Java';
+import JS from './TechContents/JS';
+import Kotlin from './TechContents/Kotlin';
+import MySQL from './TechContents/MySQL';
+import Play from './TechContents/Play';
+import Python from './TechContents/Python';
+import Reacts from './TechContents/React'
 
 const useStyles = makeStyles(theme => ({
     root: {
