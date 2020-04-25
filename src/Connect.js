@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import InstagramIcon from './InstagramIcon';
 import FacebookIcon from './FacebookIcon';
 import TopBar from './TopBar';
+import LinkedInIcon from './LinkedInIcon';
 
 const useStyles = makeStyles({
     root: {
@@ -95,6 +96,10 @@ export default function SimpleCard() {
                             <NameSpace>
                                 <IconName>GitHub</IconName>
                                 <GithubIcon />
+                            </NameSpace>
+                            <NameSpace>
+                                <IconName>LinkedIn</IconName>
+                                <LinkedInIcon />
                             </NameSpace>
                         </IconPlace>
                     </CardActions>
