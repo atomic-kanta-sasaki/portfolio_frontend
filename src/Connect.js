@@ -2,13 +2,13 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
-import TwitterIcon from './TwitterIcon';
-import GithubIcon from './GithubIcon';
+import TwitterIcon from './Icons/TwitterIcon';
+import GithubIcon from './Icons/GithubIcon';
 import styled from 'styled-components';
-import InstagramIcon from './InstagramIcon';
-import FacebookIcon from './FacebookIcon';
+import InstagramIcon from './Icons/InstagramIcon';
+import FacebookIcon from './Icons/FacebookIcon';
 import TopBar from './TopBar';
-import LinkedInIcon from './LinkedInIcon';
+import LinkedInIcon from './Icons/LinkedInIcon';
 
 const useStyles = makeStyles({
     root: {
