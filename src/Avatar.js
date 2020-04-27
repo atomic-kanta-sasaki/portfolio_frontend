@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 
@@ -21,12 +21,14 @@ const useStyles = makeStyles((theme: Theme) =>
     }),
 );
 
-export default function ImageAvatars() {
-    const classes = useStyles();
-
-    return (
-        <div className={classes.root}>
-            <Avatar alt="" src="/static/images/avatar/avaterIcon.jpg" className={classes.large} />
-        </div>
-    );
+class ImageAvatars extends Component {
+    render() {
+        return (
+            <div className={classes.root}>
+                <Avatar alt="" src="/static/images/avatar/avaterIcon.jpg" className={classes.large} />
+            </div>
+        );
+    }
 }
+
+export default ImageAvatars;
