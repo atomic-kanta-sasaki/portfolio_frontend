@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -9,24 +9,7 @@ import InstagramIcon from './Icons/InstagramIcon';
 import FacebookIcon from './Icons/FacebookIcon';
 import TopBar from './TopBar';
 import LinkedInIcon from './Icons/LinkedInIcon';
-
-const useStyles = makeStyles({
-    root: {
-        width: '350px',
-        backgroundColor: '#333333',
-    },
-    bullet: {
-        display: 'inline-block',
-        margin: '0 2px',
-        transform: 'scale(0.8)',
-    },
-    title: {
-        fontSize: 14,
-    },
-    pos: {
-        marginBottom: 12,
-    },
-});
+import './Connect.css'
 
 const IconPlace = styled.div`
     margin: 0 auto;
@@ -68,47 +51,49 @@ const Greeting = styled.div`
     font-size: 60px;
 `;
 
-export default function SimpleCard() {
-    const classes = useStyles();
-    const bull = <span className={classes.bullet}>•</span>;
+class Connect extends Component {
 
-    return (
-        <div>
-            <TopBar />
-            <Greeting>Contact</Greeting>
-            <Container>
-                <Card className={classes.root}>
-                    <TitleSpace>SNS Accounts</TitleSpace>
-                    <CardActions>
-                        <IconPlace>
-                            <NameSpace>
-                                <IconName>Twitter</IconName>
-                                <TwitterIcon />
-                            </NameSpace>
-                            <NameSpace>
-                                <IconName>Instagram</IconName>
-                                <InstagramIcon />
-                            </NameSpace>
-                            <NameSpace>
-                                <IconName>FaceBook</IconName>
-                                <FacebookIcon />
-                            </NameSpace>
-                            <NameSpace>
-                                <IconName>GitHub</IconName>
-                                <GithubIcon />
-                            </NameSpace>
-                            <NameSpace>
-                                <IconName>LinkedIn</IconName>
-                                <LinkedInIcon />
-                            </NameSpace>
-                        </IconPlace>
-                    </CardActions>
-                    <TitleSpace>Email</TitleSpace>
-                    <IconName>Gmail→ kanta.sasaki.0111@gmail.com</IconName>
-                    <IconName>Univ.Mail→ g1723035@tcu.ac.jp</IconName>
-                </Card>
-            </Container>
-        </div>
+    render() {
+        return (
+            <div>
+                <TopBar />
+                <Greeting>Contact</Greeting>
+                <Container>
+                    <Card id="connect_card">
+                        <TitleSpace>SNS Accounts</TitleSpace>
+                        <CardActions>
+                            <IconPlace>
+                                <NameSpace>
+                                    <IconName>Twitter</IconName>
+                                    <TwitterIcon />
+                                </NameSpace>
+                                <NameSpace>
+                                    <IconName>Instagram</IconName>
+                                    <InstagramIcon />
+                                </NameSpace>
+                                <NameSpace>
+                                    <IconName>FaceBook</IconName>
+                                    <FacebookIcon />
+                                </NameSpace>
+                                <NameSpace>
+                                    <IconName>GitHub</IconName>
+                                    <GithubIcon />
+                                </NameSpace>
+                                <NameSpace>
+                                    <IconName>LinkedIn</IconName>
+                                    <LinkedInIcon />
+                                </NameSpace>
+                            </IconPlace>
+                        </CardActions>
+                        <TitleSpace>Email</TitleSpace>
+                        <IconName>Gmail→ kanta.sasaki.0111@gmail.com</IconName>
+                        <IconName>Univ.Mail→ g1723035@tcu.ac.jp</IconName>
+                    </Card>
+                </Container>
+            </div>
 
-    );
+        )
+    }
 }
+
+export default Connect;

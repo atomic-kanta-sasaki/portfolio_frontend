@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { SocialIcon } from 'react-social-icons';
 import styled from 'styled-components';
-import { isCompletionStatement } from '@babel/types';
-import { render } from '@testing-library/react';
 
 const IconDistance = styled.div`
     margin-bottom: 16px;
