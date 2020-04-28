@@ -1,0 +1,13 @@
+.past_work_container{
+    flex-grow: 1;
+}
+
+.past_work_card_style{
+    max-width: 345px;
+    background-color: #C0C0C0;
+}
+
+
+.past_work_card_media{
+    height: 140px;
+}
