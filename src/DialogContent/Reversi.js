@@ -36,7 +36,7 @@ class Reversi extends Component {
             <DialogStyled>
                 <Button variant="outlined" color="primary" onClick={this.handleClickOpen.bind(this)}>
                     Detail
-            </Button>
+                </Button>
                 <Dialog
                     open={this.state.isOpen}
                     onClick={this.handleClickClose.bind(this)}
@@ -50,12 +50,12 @@ class Reversi extends Component {
                         <DialogContentText id="alert-dialog-description">
                             JavaFXを利用.<br />
                             Min-Max法とAlpha-Beta法に基づいたオセロCPUを搭載したGUIアプリケーションを一人で作成.
-                    </DialogContentText>
+                        </DialogContentText>
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={this.handleClickClose.bind(this)} color="primary">
                             Close
-                    </Button>
+                        </Button>
                     </DialogActions>
                 </Dialog>
             </DialogStyled>
