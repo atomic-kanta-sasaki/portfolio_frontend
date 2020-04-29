@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -7,44 +7,51 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import styled from 'styled-components';
 
-export default function AlertDialog() {
-    const [open, setOpen] = React.useState(false);
+const DialogStyled = styled.div``;
 
-    const handleClickOpen = () => {
-        setOpen(true);
-    };
+class DialogModal extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isOpen: false
+        }
+    }
 
-    const handleClose = () => {
-        setOpen(false);
-    };
+    handleClickOpen() {
+        this.setState({ isOpen: true })
+    }
 
-    const DialogStyled = styled.div`
-    `;
+    handleClickClose() {
+        this.setState({ isOpen: false })
+    }
 
-
-    return (
-        <DialogStyled>
-            <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-                Detail
-      </Button>
-            <Dialog
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="alert-dialog-title"
-                aria-describedby="alert-dialog-description"
-            >
-                <DialogTitle id="alert-dialog-title">{"Use Google's location service?"}</DialogTitle>
-                <DialogContent>
-                    <DialogContentText id="alert-dialog-description">
-                        {"どんな感じに言語使ってたのか書くところ"}
-                    </DialogContentText>
-                </DialogContent>
-                <DialogActions>
-                    <Button onClick={handleClose} color="primary">
-                        Close
+    render() {
+        return (
+            <DialogStyled>
+                <Button variant="outlined" color="primary" onClick={this.handleClickOpen.bind(this)}>
+                    Detail
+                </Button>
+                <Dialog
+                    open={this.state.isOpen}
+                    onClose={this.handleClickClose.bind(this)}
+                    aria-labelledby="alert-dialog-title"
+                    aria-describedby="alert-dialog-description"
+                >
+                    <DialogTitle id="alert-dialog-title">{"Use Google's location service?"}</DialogTitle>
+                    <DialogContent>
+                        <DialogContentText id="alert-dialog-description">
+                            {"どんな感じに言語使ってたのか書くところ"}
+                        </DialogContentText>
+                    </DialogContent>
+                    <DialogActions>
+                        <Button onClick={this.handleClickClose.bind(this)} color="primary">
+                            Close
                     </Button>
-                </DialogActions>
-            </Dialog>
-        </DialogStyled>
-    );
+                    </DialogActions>
+                </Dialog>
+            </DialogStyled>
+        );
+    }
 }
+
+export default DialogModal;
