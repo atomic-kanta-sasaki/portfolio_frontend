@@ -72,7 +72,7 @@ class TechIntroduction extends Component {
                                         React
                                 </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                        Level: ★★★★
+                                        Level: ★★
                                 </Typography>
                                 </CardContent>
                             </CardActionArea>
@@ -96,7 +96,7 @@ class TechIntroduction extends Component {
                                         JavaScript
                                 </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                        Level: ★★★★
+                                        Level: ★★
                                 </Typography>
                                 </CardContent>
                             </CardActionArea>
@@ -146,7 +146,7 @@ class TechIntroduction extends Component {
                                         MySQL
                                 </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                        Level: ★★★★
+                                        Level: ★★★
                                 </Typography>
                                 </CardContent>
                             </CardActionArea>
@@ -170,7 +170,7 @@ class TechIntroduction extends Component {
                                         Play
                                 </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                        Level: ★★★★
+                                        Level: ★★★
                                 </Typography>
                                 </CardContent>
                             </CardActionArea>
@@ -220,7 +220,7 @@ class TechIntroduction extends Component {
                                         Docker
                                 </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                        Level: ★★★★
+                                        Level: ★
                                 </Typography>
                                 </CardContent>
                             </CardActionArea>
@@ -244,7 +244,7 @@ class TechIntroduction extends Component {
                                         Arduino
                                 </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                        Level: ★★★★
+                                        Level: ★
                                 </Typography>
                                 </CardContent>
                             </CardActionArea>
