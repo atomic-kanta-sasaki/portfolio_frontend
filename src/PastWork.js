@@ -70,28 +70,7 @@ class PastWork extends Component {
                                 </Card>
                             </Grid>
                             <Grid item xs={12} sm={6}>
-                                <Card className="past_work_card_style">
-                                    <CardActionArea>
-                                        <CardMedia
-                                            className="past_work_card_media"
-                                            image="https://lovetech-media.com/wp-content/uploads/2019/03/labbasex_main.png"
-                                            title="LabBaseX"
-                                        />
-                                        <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">
-                                                LabBase X
-                                        </Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                2019.01 ~ 2019.12 シーズ情報, 研究者情報の初期のスクレイピングを担当していました.
-                                        </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
-                                    <CardActions>
-                                        <DialogStyled>
-                                            <LabBaseX />
-                                        </DialogStyled>
-                                    </CardActions>
-                                </Card>
+
                             </Grid>
                         </Grid>
                     </div>
